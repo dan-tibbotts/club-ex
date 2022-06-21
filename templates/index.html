@@ -1,0 +1,162 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Call to Action -->
+<div id="index-banner" class="parallax-container">
+    <div class="parallax">
+      <img src="{% static 'img/bg1.png' %}" alt="Unsplashed background img 1" />
+    </div>
+  </div>
+  <!-- End Call to Action -->
+  <!-- Subscriptions -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 text-center">
+        <h3>Pricing</h3>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title flow-text">Online Subscriptions</span>
+                <p class="flow-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus, libero. Sed similique numquam consequuntur quo dolor
+                  fuga omnis exercitationem neque.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href={%url "register"%}>$10 per month</a>
+                <a href={%url "register"%}>$100 per year</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Gym Subscriptions</span>
+                <p class="flow-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus, libero. Sed similique numquam consequuntur quo dolor
+                  fuga omnis exercitationem neque.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href={%url "register"%}>$20 per month</a>
+                <a href={%url "register"%}>$200 per year</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Subscriptions -->
+  <!-- Trainers -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 text-center">
+        <h3>Meet the Trainers</h3>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static 'img/trainer1.png'%}">
+                <span class="card-title black-text">Lucy</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static 'img/trainer2.png'%}" width="80%">
+                <span class="card-title ">Rachel</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static 'img/trainer3.png'%}" width="80%">
+                <span class="card-title ">Simon</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static 'img/trainer4.png'%}" width="80%">
+                <span class="card-title ">Frank</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End Trainers -->
+
+{% endblock content %}
+
+
+{% block footer_content%}
+  <div class="blue">
+  <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Our Mission</h5>
+          <p class="grey-text text-lighten-4">
+            We understand first hand the positive impact 
+            exercise has not only on our physical health, but on 
+            our mental health and confidence too, which is why we want 
+            everyone to reap the abundance of amazing rewards that ensues 
+            regular exercise. We celebrate all people, and we’re 
+            committed to creating a community and a culture in which 
+            you feel comfortable and confident to train in. 
+            From our facilities and our equipment right through to our 
+            Club Managers and Personal Trainers, we go above and beyond 
+            to make sure we deliver an outstanding experience for our
+            members every time they walk into the gym.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock footer_content%}
